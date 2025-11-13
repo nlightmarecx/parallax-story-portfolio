@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Parallax Scrolldown Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="scroll-wrapper">
+    <!-- Fixed title on the very top scene -->
+    <header class="hero-title">
+      <h1>Parallax scrolldown website</h1>
+      <p class="subtitle">a falling gothic little prince</p>
+      <span class="hint">scroll down</span>
+    </header>
+
+    <!-- Parallax background layers -->
+    <div class="layer layer-black" data-depth="0"></div>
+    <div class="layer layer-atmosphere" data-depth="0.15"></div>
+    <div class="layer layer-sky" data-depth="0.3"></div>
+    <div class="layer layer-hill" data-depth="0.45"></div>
+
+    <!-- Character -->
+    <img
+      id="prince"
+      src="../assets/images/falling-alice1-nobg.png"
+      alt="Falling gothic little prince"
+    />
+
+    <!-- Optional final caption on the hill -->
+    <section class="ending-caption">
+      <h2>He lands somewhere familiar.</h2>
+      <p>Every fall is just a different way to arrive.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
